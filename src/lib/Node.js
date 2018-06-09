@@ -65,7 +65,7 @@ class Node extends PureComponent {
           this.handleClick(e);
         }}>
         <Draggable
-          start={{ x: this.props.pos.x, y: this.props.pos.y }}
+          defaultPosition={{ x: this.props.pos.x, y: this.props.pos.y }}
           handle=".node-header"
           onStart={(event, ui) => this.handleDragStart(event, ui)}
           onStop={(event, ui) => this.handleDragStop(event, ui)}
