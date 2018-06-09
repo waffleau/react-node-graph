@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
+import Draggable from 'react-draggable';
 import onClickOutside from 'react-onclickoutside';
 import PropTypes from 'prop-types';
-
-var Draggable = require('react-draggable');
 
 import NodeInputList from './NodeInputList';
 import NodeOuputList from './NodeOutputList';
@@ -65,7 +64,7 @@ class Node extends PureComponent {
           this.handleClick(e);
         }}>
         <Draggable
-          defaultPosition={this.props.pos}
+          position={this.props.pos}
           handle=".node-header"
           onStart={(event, ui) => this.handleDragStart(event, ui)}
           onStop={(event, ui) => this.handleDragStop(event, ui)}
