@@ -1,12 +1,13 @@
-import React, { PropTypes } from 'react';
+import React, { PureComponent } from 'react';
 import onClickOutside from 'react-onclickoutside';
+import PropTypes from 'prop-types';
 
 var Draggable = require('react-draggable');
 
 import NodeInputList from './NodeInputList';
 import NodeOuputList from './NodeOutputList';
 
-class Node extends React.Component {
+class Node extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

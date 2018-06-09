@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
 import NodeOutputListItem from './NodeOutputListItem';
 
-export default class NodeOutputList extends React.Component {
+export default class NodeOutputList extends PureComponent {
   onMouseDown(i) {
     this.props.onStartConnector(i);
   }

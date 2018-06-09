@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
-export default class NodeOutputListItem extends React.Component {
+export default class NodeOutputListItem extends PureComponent {
   onMouseDown(e) {
     e.stopPropagation();
     e.preventDefault();

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
-export default class TrashIcon extends React.Component {
+export default class TrashIcon extends PureComponent {
   constructor(props) {
     super(props);
   }

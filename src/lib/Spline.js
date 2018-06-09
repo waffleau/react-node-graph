@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import onClickOutside from 'react-onclickoutside';
 
 import TrashIcon from './TrashIcon';
 
-class Spline extends React.Component {
+class Spline extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

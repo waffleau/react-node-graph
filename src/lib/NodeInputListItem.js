@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 
-export default class NodeInputListItem extends React.Component {
+export default class NodeInputListItem extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
